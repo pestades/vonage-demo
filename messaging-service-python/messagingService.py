@@ -23,7 +23,7 @@ vonageSms = vonage.Sms(vonageClient)
 # Auth for Sandbox
 myAuth = HTTPBasicAuth(os.getenv('API_KEY'), os.getenv('API_SECRET_KEY'))
 
-@app.route('/message', methods=['POST'])
+@app.route('/messages', methods=['POST'])
 def send_message():
     """
     Creates/sends a message.

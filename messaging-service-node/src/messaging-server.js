@@ -42,7 +42,7 @@ const vonage = new Vonage({
  * @param {string} channel - Supperted Vonage channels.
  * @param {message} environment - Only text messages by now.
  */
-app.post('/message', async (req, res) => {
+app.post('/messages', async (req, res) => {
 
   const environment = req.body.environment;
   var channel = req.body.channel;

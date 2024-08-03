@@ -67,8 +67,8 @@ function App() {
   const [message, setMessage] = useState('');
 
   const services = {
-    pythonService: 'http://localhost:5000/message',
-    nodeService: 'http://localhost:5001/message'
+    pythonService: 'http://localhost:5000/messages',
+    nodeService: 'http://localhost:5001/messages'
   };
 
   const handleServiceChange = (event) => {
